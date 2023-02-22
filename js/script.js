@@ -28,12 +28,29 @@ L'output del prezzo finale va messo fuori in forma umana
  
 
 
-let etaPasseggero = parseInt(prompt("Quanti anni hai?"));
-console.log(etaPasseggero);
+let etaPasseggero = prompt("Quanti anni hai?");
 
 
-let kilometriDaPercorrere = parseInt(prompt("Quanti kilometri devi percorrere?"));
-console.log(kilometriDaPercorrere);
+if (etaPasseggero == null){
+    alert("Inserisci un'età !");
+    etaPasseggero = prompt("Quanti anni hai?");
+    console.log(parseInt(etaPasseggero));
+    
+} else {
+    console.log(parseInt(etaPasseggero));
+}
+
+let kilometriDaPercorrere = prompt("Quanti kilometri devi percorrere?");
+
+if (kilometriDaPercorrere == null){
+    alert("Inserisci i kilometri da percorrere !");
+    kilometriDaPercorrere = prompt("Quanti kilometri devi percorrere?");
+    console.log(parseInt(kilometriDaPercorrere));
+    
+} else {
+    console.log(parseInt(kilometriDaPercorrere));
+}
+
 
 let prezzoBiglietto = 0.21 * kilometriDaPercorrere ;
 console.log(`
